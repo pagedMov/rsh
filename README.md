@@ -17,7 +17,7 @@ Ox is a modern, customizable shell program written in Rust that aims to push the
 		```
 		This would dynamically display the current Git branch in your prompt.
 	- **Exit Status Indicators**: Show symbols for success (`\S`) or failure (`\F`), or expand the exit code directly (`\\?`).
-	- **Context Groups**: The `\(` and `\)` sequences dynamically show or hide prompt content based on the current context. If none of the inner escape sequences expand into anything, everything in the group is hidden. For example:
+	- **Vis Groups**: The `\(` and `\)` sequences dynamically show or hide prompt content based on the current context. If none of the inner escape sequences expand into anything, everything in the group is hidden. For example:
 		```bash
 		\(on \{gitbranch\} \([\{gitsigns\}]\)\n\)
 		```
